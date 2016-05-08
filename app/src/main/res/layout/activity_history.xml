@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.airhome.airmemo.HistoryActivity">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/item_top" />
+
+    <ListView
+        android:id="@+id/memo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:dividerHeight="@dimen/common_margin_16"
+        android:layout_margin="@dimen/common_margin_16"
+        android:divider="@color/white" />
+
+</RelativeLayout>

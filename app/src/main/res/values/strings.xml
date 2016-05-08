@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AirMemo</string>
+    <string name="save">Save</string>
+    <string name="drop">Drop</string>
+    <string name="go_history">History</string>
+    <string name="back">Back</string>
+    <string name="edit_hint">hello&#8230;</string>
+</resources>

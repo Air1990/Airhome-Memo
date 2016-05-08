@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/item_top" />
+
+    <EditText
+        android:id="@+id/memo_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:layout_below="@+id/top"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/edit_hint"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/common_margin_16"
+        android:scrollbars="vertical"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_60"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/drop_bt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_margin_55"
+            android:layout_weight="1"
+            android:text="@string/drop"
+            android:textSize="@dimen/text_16" />
+
+        <Button
+            android:id="@+id/save_bt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_margin_55"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+
+</RelativeLayout>
